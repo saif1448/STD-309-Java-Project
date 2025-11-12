@@ -35,7 +35,9 @@ public class QuizApp extends JFrame {
         // Add panels
         mainPanel.add(new IntroductionPanel(this), "intro");
         mainPanel.add(new StudyGuidePanel(this), "study");
-        mainPanel.add(createPlaceholderPanel("Quiz Page"), "quiz");
+        
+        QuizPanel quizPanel = new QuizPanel(this);
+        mainPanel.add(quizPanel, "quiz");
         
         add(mainPanel);
         
@@ -67,6 +69,13 @@ public class QuizApp extends JFrame {
     }
     
     public void showQuiz() {
+        // Get the quiz panel and start it
+        for (Component comp : mainPanel.getComponents()) {
+            if (comp instanceof QuizPanel) {
+                ((QuizPanel) comp).startQuiz();
+                break;
+            }
+        }
         cardLayout.show(mainPanel, "quiz");
     }
     

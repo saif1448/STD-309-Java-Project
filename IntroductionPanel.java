@@ -78,15 +78,15 @@ public class IntroductionPanel extends JPanel {
             "Boolean logic is the foundation of computer programming.",
             "In this interactive course, you will:",
             "",
-            "  • Learn about Boolean values (True and False)",
-            "  • Understand comparison operators (==, !=, <, >, <=, >=)",
-            "  • Master logical operators (and, or, not)",
-            "  • Practice with real-world coding examples",
+            "• Learn about Boolean values (True and False)",
+            "• Understand comparison operators (==, !=, <, >, <=, >=)",
+            "• Master logical operators (and, or, not)",
+            "• Practice with real-world coding examples",
             "",
             "The quiz has three difficulty levels:",
-            "  • Easy - Basic concepts (15 questions)",
-            "  • Medium - Code analysis (10 questions)",
-            "  • Hard - Error detection (5 questions)",
+            "• Easy - Basic concepts (15 questions)",
+            "• Medium - Code analysis (10 questions)",
+            "• Hard - Error detection (5 questions)",
             "",
             "Score 75% or higher to advance. You can retry wrong answers!"
         };
@@ -108,7 +108,9 @@ public class IntroductionPanel extends JPanel {
                 label.setForeground(QuizApp.TEXT_COLOR);
             }
             
-            label.setAlignmentX(Component.LEFT_ALIGNMENT);
+            label.setAlignmentX(Component.CENTER_ALIGNMENT);
+            // center the text horizontally inside the label
+            label.setHorizontalAlignment(SwingConstants.CENTER);
             panel.add(label);
             panel.add(Box.createVerticalStrut(3));
         }
