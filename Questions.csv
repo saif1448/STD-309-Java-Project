@@ -1,0 +1,31 @@
+question,options,correctAnswerIndex,questionCategory
+What is the result of the following code? x=4 y=2 print(x==y),True;False;Error;None,1,Easy
+Which of the following statements is true about a Boolean variable?,A Boolean variable can store any number;A Boolean variable can store a list;A Boolean variable can store only True or False.;A boolean variable can store texts.,2,Easy
+In a game a player can continue to the next level if they have 3 lives left and their score is greater than 100. Which of the following boolean expressions correctly represents this condition?,lives == 3 or score > 1000;lives == 3 and score > 1000;lives = 3 and score > 1000;lives == 3 and score < 1000,1,Easy
+What does the expression True or False evaluate to?,True;False;Error;0,0,Easy
+A student passes if their grade is at least 70. Which Boolean expression is correct?,grade > 70;grade >= 70;grade < 70;grade <= 70,1,Easy
+The alarm goes off if motion_detected is True. Which expression is correct?,motion_detected = True;motion detected = True;motion_detected == True;motion_Detected != True,2,Easy
+If it's raining or snowing school is cancelled. Choose the correct expression.,raining and snowing;raining or snowing;raining == snowing;Raining != snowing,1,Easy
+A student can go on a break if finished_homework is True and finished_studying is True. Which is correct?,finished_homework or finished_studying;finished_homework and finished_studying;finished_homework == False and finished_studying;None of the above,1,Easy
+What does != mean in Python?,equal to;not equal to;greater than;This does not exist,1,Easy
+You can play outside if it's sunny and warm. Which of the following is correct?,sunny and warm;sunny or warm;not sunny;None of the above,0,Easy
+You can ride the roller coaster if your height is at least 120 or if you are with an adult. Choose the correct expression.,height >= 120 and with_adult;height >= 120 or with_adult;height <= 120 or with_adult;height => 120 or with_adult,1,Easy
+Which of the following is a Boolean value in Python?,'True';True;'Yes';1,1,Easy
+Which operator is used to check if two values are equal?,=;==;!=;>=,1,Easy
+Which of the following is not a Boolean operator in Python?,and;or;not;plus,3,Easy
+What does the expression True and False evaluate to?,True;False;None;Error,1,Easy
+What is the output of the following code? score = 85 if score >= 90: print('Grade A') elif score >= 75: print('Grade B') elif score >= 50: print('Grade C') else: print('Fail'),Fail;Grade A;Grade B;Grade C,2,Medium
+What is the output of the following code? temp = 32 if temp > 30: print('It's hot') else: print('It's cold'),It's hot;It's cool;Error;No output,0,Medium
+What is the output of the following code? points = 10 if points > 25: print(Excellent) elif points > 5: print(Good) else: print(Try harder),Excellent;Good;Try Harder;Error,1,Medium
+What is the output of the following code? password = '123' if password == '321' print('Access granted') else: print('Access denied'),Access denied;Access granted;Error;0,0,Medium
+Is there something wrong with this code? score = 85 if score >= 90 print('Grade A') elif score >= 75: print('Grade B') elif score >= 50: print('Grade C') else: print('Fail'),Yes missing colon after if;No it runs fine;Yes elif should be replaced with else if;None of the above,0,Medium
+What is wrong with the code below? apples = 5 bananas = False if apples < 10 and bananas == False: print('Yippie!'),Indentation missing for print;and is wrong;Missing colons after variables;This code works fine.,0,Medium
+What is wrong with the code below? age = 13 if age>=18 and has_ticket == True: print('Access granted'),and should not be used;Missing colons;This code works fine.;has_ticket is undefined,3,Medium
+What is the output of the following code? age = 10 if age < 5: print('Toddler') elif age < 13: print('Child') elif age < 18: print('Teen') else: print('Adult'),Toddler;Child;Teen;Adult,1,Medium
+What is the output of the following code? money = 20 price = 15 if money >= price: print('You can buy the snack') else: print('You cannot buy the snack'),You can buy the snack;You cannot buy the snack;Error;None of the above,0,Medium
+What is the output of the following code? day = 'Sunday' if day == 'Saturday' or day == 'Sunday': print('Weekend') else: print('Weekday'),Weekend;Weekday;Error;None of the above,0,Medium
+What is the error and how can it be fixed? temp = 15 sunny = True if temp > 20 or sunny = True: print('Wear sunglasses'),Assignment operator (=) was used instead of comparison operator (==). Fix using sunny == True;or should not be used use and instead;Missing colons after variable assignment;No error,0,Hard
+What is the error and how can it be fixed? money = 15 price = 10 if money => price: print('You can buy it'),=> is invalid replace with >= so that it becomes if money >= price;Missing colon;No error;None of the above,0,Hard
+What is the error and how can it be fixed? day = 'Monday' if day == 'Saturday' or day == 'Sunday' print('Weekend') else: print('Weekday'),Missing colon after if fix: if day == 'Saturday' or day == 'Sunday':;or is wrong;== cannot be used for strings;No error,0,Hard
+What is the error and how can it be fixed? score = '90' if score > 80: print('Pass'),Cannot compare string with an integer fix by removing quotes around 90.;Nothing is wrong;Missing colon;None of the above,0,Hard
+What is the error and how can it be fixed? temp = 25 if temp > 30 & temp < 35: print('Great weather'),& should be replaced with and;Missing colon;print indentation is wrong;No error,0,Hard
