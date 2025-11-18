@@ -11,12 +11,13 @@ public class QuestionLoader {
             br.readLine(); // skip header
             String line;
             while ((line = br.readLine()) != null) {
-                String[] parts = line.split(",", 4);
+                String[] parts = line.split(",", 5);
                 String question = parts[0].replace("\"", "");
                 String[] options = parts[1].split(";");
                 int correct = Integer.parseInt(parts[2]);
                 String category = parts[3];
-                questions.add(new Question(question, options, correct, category));
+                String explanation = parts[4];
+                questions.add(new Question(question, options, correct, category, explanation));
             }
         } catch (Exception e) {
             e.printStackTrace();

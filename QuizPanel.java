@@ -198,13 +198,16 @@ public class QuizPanel extends JPanel {
         
         // Show feedback
         if (isCorrect) {
-            feedbackLabel.setText("✓ Correct!");
+            feedbackLabel.setText("<html>[✓] Correct!<br><br><b>Explanation:</b> " + 
+                currentQuestion.getExplanation() + "</html>");
             feedbackLabel.setForeground(QuizApp.SECONDARY_COLOR);
         } else {
             int correctIndex = currentQuestion.getCorrectAnswerIndex();
-            feedbackLabel.setText("✗ Incorrect! Correct answer: " + 
+            feedbackLabel.setText("<html>[X] Incorrect! Correct answer: " + 
                 (char)('a' + correctIndex) + ") " + 
-                currentQuestion.getOptions()[correctIndex]);
+                currentQuestion.getOptions()[correctIndex] + 
+                "<br><br><b>Explanation:</b> " + 
+                currentQuestion.getExplanation() + "</html>");
             feedbackLabel.setForeground(QuizApp.ACCENT_COLOR);
         }
         
@@ -277,13 +280,13 @@ public class QuizPanel extends JPanel {
     }
     
     private void showFinalCertificate() {
-        String message = "🎉 Congratulations! 🎉\n\n" +
+        String message = "*** Congratulations! ***\n\n" +
             "You have successfully completed all levels of the\n" +
             "Boolean Logic Quiz!\n\n" +
             "You've mastered:\n" +
-            "✓ Easy - Basic concepts\n" +
-            "✓ Medium - Code analysis\n" +
-            "✓ Hard - Error detection\n\n" +
+            "[✓] Easy - Basic concepts\n" +
+            "[✓] Medium - Code analysis\n" +
+            "[✓] Hard - Error detection\n\n" +
             "Great work!";
         
         JOptionPane.showMessageDialog(

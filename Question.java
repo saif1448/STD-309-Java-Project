@@ -4,12 +4,14 @@ public class Question {
     private String[] options;
     private int correctAnswerIndex;
     private String questionCategory;
+    private String explanation;
 
-    public Question(String question, String[] options, int correctAnswerIndex, String questionCategory) {
+    public Question(String question, String[] options, int correctAnswerIndex, String questionCategory, String explanation) {
         this.question = question;
         this.options = options;
         this.correctAnswerIndex = correctAnswerIndex;
         this.questionCategory = questionCategory;
+        this.explanation = explanation;
     }
 
     public String getQuestion() {
@@ -26,6 +28,10 @@ public class Question {
 
     public String getQuestionCategory() {
         return questionCategory;
+    }
+
+    public String getExplanation() {
+        return explanation;
     }
 
     @Override
